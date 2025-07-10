@@ -1,0 +1,65 @@
+:host {
+    display: block;
+    padding: 1.5rem;
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-table {
+    font-size: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+.loading-text {
+    padding: 1.5rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+.lightning-card {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e3e6ea;
+}
+
+.lightning-datatable {
+    font-size: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+/* Row hover effect */
+.lightning-datatable .slds-hint-parent:hover {
+    background-color: #f0f4ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Header style */
+.lightning-datatable .slds-table th {
+    background-color: #f9fafc;
+    color: #2e2e2e;
+    font-weight: 600;
+}
+
+/* Cell style */
+.lightning-datatable .slds-table td {
+    padding: 0.75rem;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #ececec;
+}
+
+.lightning-card {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

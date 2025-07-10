@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Employee Expenses" icon-name="standard:expense_report">
+        <template if:true={expenses}>
+            <lightning-datatable
+                key-field="Id"
+                data={formattedExpenses}
+                columns={columns}
+                hide-checkbox-column="true">
+                class="custom-table"
+            ></lightning-datatable>
+        </template>
+        <template if:false={expenses}>
+            <p class="loading-text">Loading expenses...</p>
+        </template>
+    </lightning-card>
+</template>
